@@ -1,0 +1,110 @@
+.table_wrapper {
+  max-width: 860px;
+  margin: auto;
+  width: 100%;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 16px;
+  overflow-x: auto;
+  .sortArrow {
+    display: block;
+    margin: 10px auto;
+    font-size: 46px;
+    color: rgba(38, 50, 56, 0.8)
+  }
+
+  .sort_head {
+    cursor: pointer;
+  }
+
+  .hover_items, .email {
+    transition: all 0.5s;
+  }
+
+  .hover_items:hover {
+    background-color: rgba(0, 150, 136, 0.8);
+    color: rgb(216, 216, 216);
+  }
+
+  .email {
+    position: relative;
+  }
+
+  .users_table {
+    min-width: 830px;
+    width: 100%;
+    table-layout: fixed;
+   tr th:first-child{
+      width: 10%;
+    }
+    tr th:nth-child(2){
+      width: 17%;
+    }
+    tr th:nth-child(3){
+      width: 40%;
+    }
+    tr th:nth-child(4), tr th:nth-child(5){
+      width: 10%;
+    }
+     tr th:nth-child(6){
+      width:23%;
+    }
+  }
+
+  .users_table, th, td {
+    border-collapse: collapse;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+
+  th:not(first-child), td:not(first-child) {
+    padding: 15px 10px;
+  }
+
+  th:first-child, td:first-child, th:last-child, td:last-child {
+    padding: 15px;
+  }
+
+  thead tr {
+    background-color: rgba(7, 11, 14, 0.9);
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: rgba(38, 50, 56, 0.8);
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: rgba(55, 73, 81, 0.8);
+  }
+
+  th {
+    color: #999999;
+  }
+
+  td {
+    color: rgb(216, 216, 216);
+  }
+
+  .email {
+    cursor: pointer;
+  }
+
+  .email:hover {
+    background-color: rgba(7, 11, 14, 0.5);
+  }
+
+  .user_info {
+    position: absolute;
+    top: -90%;
+    right: -10%;
+    background-color: rgba(0, 150, 136, 0.8);
+    color: rgb(216, 216, 216);
+    padding: 15px;
+    border-radius: 25px 25px 25px 0;
+  }
+
+}
+
+
+
