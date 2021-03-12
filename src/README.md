@@ -22,7 +22,13 @@
  1) `npm i`
  2) `npm run start`
 
+# Чтобы запустить в Docker 
+Установка модулей может занять некоторе время!
+1) создайте образ.  в корне приложения(где находится Dockerfile)
+`docker build -t imageName .`
+2) запустите  `docker run -it -p 3000:3000 imageName`
 
+Приложение должно запуститься на http://localhost:3000 
 
 
 
